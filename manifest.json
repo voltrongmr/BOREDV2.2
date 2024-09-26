@@ -5,8 +5,10 @@
   "description": "An extension with a glowing bar and overlays.",
   "permissions": ["storage", "activeTab", "tabs"],
   "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
   "action": {
-    "default_popup": "popup.html",
     "default_icon": {
       "16": "icon.png",
       "48": "icon.png",
@@ -16,8 +18,17 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["popup.js"],
-      "css": ["popup.css"]
+      "js": ["content.js"],
+      "css": ["content.css"]
     }
-  ]
+  ],
+  "commands": {
+    "toggle-bar": {
+      "suggested_key": {
+        "default": "Ctrl+;",
+        "mac": "Ctrl+;"
+      },
+      "description": "Toggle the glowing bar"
+    }
+  }
 }
