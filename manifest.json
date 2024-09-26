@@ -25,8 +25,8 @@
   "commands": {
     "toggle-bar": {
       "suggested_key": {
-        "default": "Ctrl+;",
-        "mac": "Ctrl+;"
+        "default": "Ctrl+Shift+;",
+        "mac": "Ctrl+Shift+;"
       },
       "description": "Toggle the glowing bar"
     }
