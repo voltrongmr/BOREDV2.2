@@ -1,0 +1,59 @@
+/* Glowing bar */
+#glowBar {
+  position: fixed;
+  right: 20px;
+  top: 10px;
+  width: 30px;
+  height: 5px;
+  background-color: limegreen;
+  box-shadow: 0px 0px 10px 2px limegreen;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+/* Dropdown menu with transparency */
+#dropdownMenu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+/* Button styling */
+#dropdownMenu button {
+  display: block;
+  background-color: gray;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 0;
+  font-size: 16px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+#dropdownMenu button:hover {
+  background-color: #2a2a2a;
+  box-shadow: 0px 0px 15px 2px cyan;
+}
+
+/* Overlay styling */
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
