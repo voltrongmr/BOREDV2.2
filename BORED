@@ -1,7 +1,6 @@
 OverlayExtension/
 │
-├── manifest.json
-├── popup.html
-├── popup.js
-├── popup.css
-└── icon.png (your extension icon)
+├── manifest.json      # Updated to include the content script
+├── content.js         # The main script that injects the glowing bar into all pages
+├── content.css        # The CSS for the glowing bar, overlays, and dropdown menu
+└── icon.png           # Your extension's icon (optional, can be left as-is)
